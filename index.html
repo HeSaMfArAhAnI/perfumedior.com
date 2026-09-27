@@ -67,7 +67,9 @@ body {
 
     min-height: 100vh;
 
-    overflow: hidden;
+    overflow-x: hidden;
+
+    overflow-y: auto;
 
     font-family:
         "Vazirmatn",
@@ -96,6 +98,11 @@ body {
             var(--blue) 52%,
             var(--deep-2)
         );
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
 
@@ -128,7 +135,7 @@ body::before {
         radial-gradient(
             circle at center,
             transparent 35%,
-            rgba(0,0,0,.30) 100%
+            rgba(0,0,0,.30) 100% 
         );
 
 }
